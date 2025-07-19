@@ -1,4 +1,4 @@
-// Navbar component for VideoStream
+
 export function renderNavbar() {
     const navbar = document.createElement('nav');
     navbar.className = 'navbar';
@@ -32,7 +32,6 @@ export function renderNavbar() {
     document.getElementById('navbar').innerHTML = '';
     document.getElementById('navbar').appendChild(navbar);
 
-    // Event listeners
     document.getElementById('menuToggleBtn').addEventListener('click', () => {
         document.getElementById('sidebar').classList.toggle('hidden');
         document.getElementById('mainContent').classList.toggle('sidebar-hidden');

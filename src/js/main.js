@@ -72,8 +72,8 @@ export let selectedVideoId = null;
 export const userStore = [
     {
         id: 1,
-        username: 'Rshan',
-        uploadedVideos: [1, 2, 3], // video IDs
+        username: 'Demo user',
+        uploadedVideos: [1, 2, 3], 
     }
 ];
 export let currentUserId = 1;
@@ -81,7 +81,7 @@ export let currentUserId = 1;
 export function addVideo(video) {
     video.id = videoStore.length ? videoStore[videoStore.length-1].id + 1 : 1;
     videoStore.push(video);
-    // Associate with current user
+
     const user = userStore.find(u => u.id === currentUserId);
     if (user) user.uploadedVideos.push(video.id);
 }
@@ -96,7 +96,6 @@ export function getVideoUrl(video) {
 
 let lastSearchQuery = '';
 
-// Routing logic
 function parseHash() {
     const hash = window.location.hash.replace(/^#\/?/, '');
     const [page, ...params] = hash.split('/');
@@ -136,7 +135,6 @@ function route() {
 
 window.addEventListener('hashchange', route);
 
-// Navigation helpers
 window.navigateTo = function(page, param) {
     let hash = `#/${page}`;
     if (param !== undefined && param !== null) {
@@ -145,14 +143,12 @@ window.navigateTo = function(page, param) {
     window.location.hash = hash;
 };
 
-// Initial render
 
 document.addEventListener('DOMContentLoaded', () => {
     renderNavbar();
     renderSidebar();
     route();
 
-    // Setup search bar event listeners
     setTimeout(() => {
         const searchInput = document.getElementById('searchInput');
         const searchBtn = document.getElementById('searchBtn');
@@ -171,7 +167,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100);
 });
 
-// Update all navigation in the app to use window.navigateTo instead of showPage
 window.showPage = function(page, param) {
     window.navigateTo(page, param);
 }; 

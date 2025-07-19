@@ -1,4 +1,4 @@
-// Sidebar component for VideoStream
+
 export function renderSidebar() {
     const sidebar = document.createElement('aside');
     sidebar.className = 'sidebar';
@@ -56,7 +56,6 @@ export function renderSidebar() {
     document.getElementById('sidebar').innerHTML = '';
     document.getElementById('sidebar').appendChild(sidebar);
 
-    // Navigation event listeners
     sidebar.querySelectorAll('.sidebar-item[data-page]').forEach(item => {
         const page = item.getAttribute('data-page');
         if (page === 'home') {

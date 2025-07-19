@@ -1,8 +1,7 @@
-/* VideoStream Platform Styles - moved from index.html */
+
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -150,7 +148,6 @@ body {
     background-color: #404040;
 }
 
-/* Sidebar Styles */
 .sidebar {
     position: fixed;
     top: 60px;
@@ -230,7 +227,6 @@ body {
     display: none;
 }
 
-/* Main Content Styles */
 #mainContent {
     margin-left: 240px;
     margin-top: 60px;
@@ -244,19 +240,16 @@ body {
     margin-left: 0;
 }
 
-/* Page Styles */
 .page {
     display: none;
     width: 100%;
     height: auto;
-    /* Remove any full viewport settings */
 }
 
 .page.active {
     display: block;
 }
 
-/* Home Page Styles */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -326,7 +319,6 @@ body {
     font-size: 14px;
 }
 
-/* Video Watch Page Styles */
 .watch-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -484,7 +476,6 @@ body {
     font-size: 12px;
 }
 
-/* Upload Page Styles */
 .upload-container {
     max-width: 800px;
     margin: 0 auto;
@@ -612,7 +603,6 @@ body {
     background-color: #404040;
 }
 
-/* Profile Page Styles */
 .profile-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -703,7 +693,6 @@ body {
     display: block;
 }
 
-/* Search Results Styles */
 .search-results {
     max-width: 1200px;
     margin: 0 auto;
@@ -789,7 +778,6 @@ body {
     -webkit-box-orient: vertical;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .watch-container {
         grid-template-columns: 1fr;
