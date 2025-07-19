@@ -31,10 +31,9 @@ Video player/
 1. **Clone or Download the Repository**
 2. **Open the Project Folder**
 3. **Run Locally**
-   - Open `public/index.html` directly in your browser, or
-   - Use a simple HTTP server (recommended for module support):
-     - Python: `python -m http.server 8000` from the `public` directory
-     - Node: `npx serve public`
+   - Open vs code
+   - Navigate to public -> index.html
+   - Go live by clicking the option available on the bottom right corner.
 4. **Project Structure**
    - All source code is in `src/` (CSS, JS, components, pages)
    - Static assets (images, thumbnails) go in `assets/`
