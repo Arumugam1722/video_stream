@@ -1,4 +1,4 @@
-// Main entry point for VideoStream platform
+
 import { renderNavbar } from './components/navbar.js';
 import { renderSidebar } from './components/sidebar.js';
 import { loadHomePage } from './pages/home.js';
@@ -7,8 +7,7 @@ import { loadUploadPage } from './pages/upload.js';
 import { loadProfilePage } from './pages/profile.js';
 import { loadSearchPage } from './pages/search.js';
 
-// In-memory video data
-// To add your own videos, place .mp4 files in the assets/ folder and add an entry below with the correct url (e.g., 'assets/myvideo.mp4')
+
 export const videoStore = [
     {
         id: 1,
@@ -16,9 +15,9 @@ export const videoStore = [
         channel: 'TechChannel',
         views: '1.2M',
         date: '2 days ago',
-        duration: '12:34',
+        duration: '9:00',
         description: 'In this comprehensive tutorial, we\'ll explore advanced JavaScript concepts...',
-        url: '../assets/videos/add-blur-from-nav.mp4', // No real video, just a placeholder
+        url: '../assets/videos/add-blur-from-nav.mp4', 
         thumbnail: '',
     },
     {
@@ -27,7 +26,7 @@ export const videoStore = [
         channel: 'WebDev Pro',
         views: '1.2M',
         date: '1 week ago',
-        duration: '8:20',
+        duration: '14:00',
         description: 'A complete React tutorial for beginners covering all the basics...',
         url: '../assets/videos/modifying-panels.mp4',
         thumbnail: '',
